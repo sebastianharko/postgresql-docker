@@ -32,6 +32,7 @@ RUN echo "host all  all    0.0.0.0/0  md5" >> /etc/postgresql/9.4/main/pg_hba.co
 RUN echo "listen_addresses='*'" >> /etc/postgresql/9.4/main/postgresql.conf
 
 RUN echo "wal_level=logical" >> /etc/postgresql/9.4/main/postgresql.conf
+RUN echo "max_replication_slots=8" >> /etc/postgresql/9.4/main/postgresql.conf
 
 # Expose the PostgreSQL port
 EXPOSE 5432
