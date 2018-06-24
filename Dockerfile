@@ -20,7 +20,8 @@ USER postgres
 
 RUN /etc/init.d/postgresql start \
     && psql --command "CREATE USER pguser WITH SUPERUSER PASSWORD 'pguser';" \
-    && createdb -O pguser pgdb
+    && createdb -O pguser pgdb1 \
+    && createdb -O pguser pgdb2
 
 USER root
 
