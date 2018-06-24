@@ -2,8 +2,12 @@
 
 Docker image for PostgreSQL.
 
-PostgreSQL version: 9.4.
+Multiple PostgreSQL versions.
 
-This has configuration that allows us to use "logical decoding" feature. 
+Included:
+- configuration that allows us to use "logical decoding" feature
+- two databases: pgdb1, pgdb2
+- username / password: pguser / pguser
+- standardport port: 5432  
 
 
