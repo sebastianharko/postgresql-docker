@@ -17,20 +17,14 @@ cd 10.4
 docker build -t postgres104 .
 cd ..
 
-cd 12.x
-docker build -t postgres12x .
-cd ..
-
-
 docker tag postgres94 sebastianharko/postgres94
 docker tag postgres95 sebastianharko/postgres95
 docker tag postgres96 sebastianharko/postgres96
 docker tag postgres104 sebastianharko/postgres104
-docker tag postgres12x sebastianharko/postgres12x
 
 docker push sebastianharko/postgres94
 docker push sebastianharko/postgres95
 docker push sebastianharko/postgres96
 docker push sebastianharko/postgres104
-docker push sebastianharko/postgres12x
+
 
